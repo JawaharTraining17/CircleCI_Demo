@@ -19,9 +19,13 @@
 
 
 echo "checkonly deployment to the org"
-sfdx force:source:deploy --sourcepath ../CircleCI_Demo --targetusername DevHub -c
+#sfdx force:source:deploy --sourcepath ../CircleCI_Demo --targetusername DevHub -c
+sfdx force:source:deploy -x path/to/package.xml --targetusername DevHub -c
+
 
 
 #echo "Testing code in org"
 #sfdx force:apex:test:run --testlevel RunLocalTests --outputdir test-results --resultformat tap --targetusername DevHub
 #####
+#$ sfdx force:source:deploy -x path/to/package.xml --targetusername DevHub -c
+
