@@ -1,7 +1,7 @@
 {
   "packageDirectories": [
     {
-      "path": "./CircleCI_Demo",
+      "path": "force-app",
       "default": true
     }
   ],
