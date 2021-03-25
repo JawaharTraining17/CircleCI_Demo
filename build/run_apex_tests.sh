@@ -19,8 +19,8 @@
 
 
 echo "checkonly deployment to the org"
-#sfdx force:source:deploy --sourcepath ../CircleCI_Demo --targetusername DevHub -c
-sfdx force:source:deploy -r --targetusername DevHub -c
+sfdx force:source:deploy --sourcepath force-app --targetusername DevHub -c
+#sfdx force:source:deploy -r --targetusername DevHub -c
 
 
 
